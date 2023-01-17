@@ -10,7 +10,7 @@
 		max-height: unset !important;
 		padding: unset !important;
 		margin: unset !important;
-		font-size: 10px !important;
+		font-size: 13px !important;
 	}
 
 	body {
@@ -28,6 +28,10 @@
 	#grid {
 		width: 90vw !important;
 		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+
+	.grid-list-default {
 		grid-template-areas: 
 		'profile-card profile-card'
 		'map-card   map-card'
@@ -38,6 +42,43 @@
 		'artstation-card art-card'
 		'article-card article-card'
 		'discord-card discord-card' !important;
+	}
+	.grid-list-about {
+				grid-template-areas: 
+				'profile-card profile-card'
+				'my-stack-card my-stack-card'
+				'insta-card github-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'artstation-card art-card'
+				'article-card article-card'
+				'map-card   map-card'
+				'discord-card discord-card' !important;
+	}
+	.grid-list-projects {
+				grid-template-areas: 
+				'profile-card profile-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'artstation-card art-card'
+				'my-stack-card my-stack-card'
+				'insta-card github-card'
+				'article-card article-card'
+		'map-card   map-card'
+		'discord-card discord-card' !important;
+	}
+	.grid-list-media {
+				grid-template-areas: 
+				'insta-card github-card'
+				'artstation-card art-card'
+				'discord-card discord-card'
+				'article-card article-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'profile-card profile-card'
+				'my-stack-card my-stack-card'
+				'map-card   map-card'
+				 !important;
 	}
 
 	/* main styles */
@@ -50,7 +91,7 @@
 	}
 
 	.nav a {
-		font-size: 16px !important;
+		font-size: 13px !important;
 	}
 
 
@@ -66,9 +107,6 @@
 		width: 64px !important;
 	}
 
-	.profile-card p, .profile-card p span {
-		font-size: 16px !important;
-	}
 
 	.map-card, .map-card * {
 		width: 100% !important;
@@ -78,10 +116,8 @@
 		height: 100% !important;
 	}
 
-	.map-card {
+	.map-card div iframe {
 		border-radius: 2rem !important;
-		-moz-border-radius: 2rem !important;
-    	-webkit-border-radius: 2rem !important;
 		overflow: hidden !important;
 	}
 
@@ -92,7 +128,7 @@
 
 	.product-card div {
 		width: 100% !important;
-		padding: 24px 0px !important;
+		padding: 12px 0px !important;
 		gap: 0px !important;
 		display: flex !important;
 		flex-direction: column 	!important;
@@ -164,10 +200,13 @@
 		padding: 12px !important;
 		text-align: center;
 	}
+	.my-stack-card h1 {
+		font-size: 16px !important;
+	}
 
 	.my-stack-card ul {
 		width: 90% !important;
-		height: 36px !important;
+		height: 42px !important;
 		padding: 7px !important;
 		overflow-y: hidden;
 	}
@@ -181,7 +220,7 @@
 	}
 
 	.my-stack-card ul img {
-		width: 19px !important;
+		width: 26px !important;
 	}
 
 
@@ -226,7 +265,8 @@
 	/* article card */
 
 	.article-card {
-		padding: 24px 12px !important;
+		padding: 24px 24px !important;
+		text-align: center !important;
 	}
 
 	.article-card h1, 
@@ -244,7 +284,7 @@
 	}
 
 	.discord-card div {
-		gap: 5px !important;
+		gap: 21px !important;
 	}
 
 	.discord-card div > i {
@@ -253,5 +293,9 @@
 
 	.discord-card h3 {
 		font-size: 16px !important;
+	}
+
+	.footer-text {
+		margin: 12px 0px !important;
 	}
 }
