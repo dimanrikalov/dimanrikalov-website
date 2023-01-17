@@ -3,32 +3,16 @@ const link = document.createElement('link');
 
 link.rel = 'stylesheet';
 
-(function fnBrowserDetect(){
-                 
-    let userAgent = navigator.userAgent;
-    let browserName;
-    
-    if(userAgent.match(/chrome|chromium|crios/i)){
-        browserName = "chrome";
-        link.href = './chromeMediaQueries.css';
-        document.getElementsByTagName('HEAD')[0].appendChild(link);
-        console.log(browserName);
-        return;  
-      }else if(userAgent.match(/firefox|fxios/i)){
-        browserName = "firefox";
-      }  else if(userAgent.match(/safari/i)){
-        browserName = "safari";
-        link.href = './safariMediaQueries.css';
-        document.getElementsByTagName('HEAD')[0].appendChild(link);
-        console.log(browserName);
-        return
-      }else if(userAgent.match(/opr\//i)){
-        browserName = "opera";
-      } else if(userAgent.match(/edg/i)){
-        browserName = "edge";
-      }else{
-        browserName="No browser detection";
-      }
-    
-           
+(function fnBrowserDetect() {
+  
+	let userAgent = navigator.userAgent;
+
+	if (userAgent.match(/Android/i)) {
+		link.href = './chromeMediaQueries.css';
+		document.getElementsByTagName('HEAD')[0].appendChild(link);
+		return;
+	} else if (userAgent.match(/Mac OS X/i) || userAgent.match(/iPhone OS/i)) {
+		link.href = './safariMediaQueries.css';
+		document.getElementsByTagName('HEAD')[0].appendChild(link);
+	}
 })();
