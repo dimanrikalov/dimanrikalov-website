@@ -7,12 +7,12 @@ link.rel = 'stylesheet';
   
 	let userAgent = navigator.userAgent;
 
-	if (userAgent.match(/Android/i)) {
+	if (userAgent.match(/Mac OS X/i) || userAgent.match(/iPhone OS/i)) {
+		link.href = './safariMediaQueries.css';
+		document.getElementsByTagName('HEAD')[0].appendChild(link);
+	} else {
 		link.href = './chromeMediaQueries.css';
 		document.getElementsByTagName('HEAD')[0].appendChild(link);
 		return;
-	} else if (userAgent.match(/Mac OS X/i) || userAgent.match(/iPhone OS/i)) {
-		link.href = './safariMediaQueries.css';
-		document.getElementsByTagName('HEAD')[0].appendChild(link);
 	}
 })();

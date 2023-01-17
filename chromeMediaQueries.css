@@ -216,7 +216,7 @@
 	}
 	.my-stack-card ul::-webkit-scrollbar-thumb {
 		width: 3px;
-		border: 4px solid var(--darkest) !important;
+		border: 4px solid var(--dark-background) !important;
 	}
 
 	.my-stack-card ul img {
