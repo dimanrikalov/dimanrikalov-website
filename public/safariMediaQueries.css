@@ -10,7 +10,7 @@
 		max-height: unset !important;
 		padding: unset !important;
 		margin: unset !important;
-		font-size: 10px !important;
+		font-size: 13px !important;
 	}
 
 	body {
@@ -50,7 +50,7 @@
 	}
 
 	.nav a {
-		font-size: 16px !important;
+		font-size: 13px !important;
 	}
 
 
@@ -66,9 +66,6 @@
 		width: 64px !important;
 	}
 
-	.profile-card p, .profile-card p span {
-		font-size: 16px !important;
-	}
 
 	.map-card, .map-card * {
 		width: 100% !important;
@@ -92,7 +89,7 @@
 
 	.product-card div {
 		width: 100% !important;
-		padding: 24px 0px !important;
+		padding: 12px 0px !important;
 		gap: 0px !important;
 		display: flex !important;
 		flex-direction: column 	!important;
@@ -164,10 +161,13 @@
 		padding: 12px !important;
 		text-align: center;
 	}
+	.my-stack-card h1 {
+		font-size: 16px !important;
+	}
 
 	.my-stack-card ul {
 		width: 90% !important;
-		height: 36px !important;
+		height: 42px !important;
 		padding: 7px !important;
 		overflow-y: hidden;
 	}
@@ -181,7 +181,7 @@
 	}
 
 	.my-stack-card ul img {
-		width: 19px !important;
+		width: 26px !important;
 	}
 
 
@@ -226,7 +226,8 @@
 	/* article card */
 
 	.article-card {
-		padding: 24px 12px !important;
+		padding: 24px 24px !important;
+		text-align: center !important;
 	}
 
 	.article-card h1, 
@@ -244,7 +245,7 @@
 	}
 
 	.discord-card div {
-		gap: 5px !important;
+		gap: 21px !important;
 	}
 
 	.discord-card div > i {
@@ -253,5 +254,9 @@
 
 	.discord-card h3 {
 		font-size: 16px !important;
+	}
+
+	.footer-text {
+		margin: 12px 0px !important;
 	}
 }
