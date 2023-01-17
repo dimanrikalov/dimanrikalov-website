@@ -1,0 +1,26 @@
+@media screen and (max-width: 450px) {
+    * {
+        width: unset !important;
+        height: unset !important;
+    }
+
+
+
+    a.home {
+        font-size: 13px !important;
+        margin-bottom: 16px !important;
+    }
+
+    img {
+        width: 28vw !important;
+    }
+
+
+    p {
+        margin: 16px 0px !important;
+    }
+
+    .footer-text {
+        font-size: 13px !important;
+    }
+}

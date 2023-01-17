@@ -28,6 +28,10 @@
 	#grid {
 		width: 90vw !important;
 		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+
+	.grid-list-default {
 		grid-template-areas: 
 		'profile-card profile-card'
 		'map-card   map-card'
@@ -38,6 +42,43 @@
 		'artstation-card art-card'
 		'article-card article-card'
 		'discord-card discord-card' !important;
+	}
+	.grid-list-about {
+				grid-template-areas: 
+				'profile-card profile-card'
+				'my-stack-card my-stack-card'
+				'insta-card github-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'artstation-card art-card'
+				'article-card article-card'
+				'map-card   map-card'
+				'discord-card discord-card' !important;
+	}
+	.grid-list-projects {
+				grid-template-areas: 
+				'profile-card profile-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'artstation-card art-card'
+				'my-stack-card my-stack-card'
+				'insta-card github-card'
+				'article-card article-card'
+		'map-card   map-card'
+		'discord-card discord-card' !important;
+	}
+	.grid-list-media {
+				grid-template-areas: 
+				'insta-card github-card'
+				'artstation-card art-card'
+				'discord-card discord-card'
+				'article-card article-card'
+				'product-card to-do-card'
+				'product-card to-do-card'
+				'profile-card profile-card'
+				'my-stack-card my-stack-card'
+				'map-card   map-card'
+				 !important;
 	}
 
 	/* main styles */
@@ -75,10 +116,8 @@
 		height: 100% !important;
 	}
 
-	.map-card {
+	.map-card div iframe {
 		border-radius: 2rem !important;
-		-moz-border-radius: 2rem !important;
-    	-webkit-border-radius: 2rem !important;
 		overflow: hidden !important;
 	}
 
