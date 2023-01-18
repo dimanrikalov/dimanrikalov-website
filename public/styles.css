@@ -8,6 +8,11 @@ body {
 body {
 	background-color: var(--dark-background);
 }
+
+.product-card h1 {
+	letter-spacing: 1px;
+}
+
 .product-card h1,
 body {
 	color: var(--white-main);
@@ -79,7 +84,7 @@ a.selected {
 #grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
+	gap: 12px;
 	list-style-type: none;
 }
 .grid-list-default {
@@ -130,6 +135,7 @@ a.selected {
 
 .profile-card p {
 	text-align: justify;
+	line-height: 1.5rem;
 }
 
 .profile-card span {
@@ -187,6 +193,7 @@ a.selected {
 	text-align: center;
 	font-weight: 600;
 	margin-top: 48px;
+	letter-spacing: 1px;
 }
 .product-card div ul {
 	list-style-type: none;
@@ -488,9 +495,37 @@ a i {
 
 * {
 	text-align: center;
+	border-radius: 32px !important;
 }
 
 .discord-card div p,
 .discord-card div h3 {
 	text-align: left;
+}
+
+.profile-card img {
+	border-radius: 50% !important;
+}
+
+.profile-card .emoji {
+	position: relative;
+	top: 2px;
+	height: 18px !important;
+	width: 18px !important;
+}
+
+.to-do-card ul li {
+	border-radius: 1.3rem !important;
+}
+
+.my-stack-card ul {
+	border-radius: 0.5rem !important;
+}
+
+.to-do-card .to-do-container {
+	border-radius: 1rem !important;
+}
+
+.to-do-card .to-do-container li {
+	border-radius: 0.5rem !important;
 }
