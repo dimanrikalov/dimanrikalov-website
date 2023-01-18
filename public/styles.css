@@ -17,7 +17,7 @@ p {
 .article-card div,
 .map-card div,
 .to-do-card ul {
-	height: 100%;
+	height: 110%;
 	width: 100%;
 }
 .my-stack-card div ul,
@@ -168,7 +168,7 @@ a.selected {
 }
 .map-card .map-container .map {
 	width: 100%;
-	height: 110%;
+	height: 100%;
 }
 .product-card {
 	grid-area: product-card;
