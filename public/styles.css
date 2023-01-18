@@ -1,28 +1,51 @@
-@import url(./base.css);
+@import url(base.css);
+.grid-item,
+.nav {
+	background-color: var(--dark-card);
+}
+.product-card h1,
+p {
+	letter-spacing: 1px;
+}
+.article-card div a:hover,
+.discord-card div a:hover,
+.grid-item:hover,
+.nav:hover {
+	border-color: var(--red-main);
+}
+.article-card div,
+.map-card div,
+.map-card div iframe,
+.to-do-card ul {
+	height: 100%;
+	width: 100%;
+}
+.my-stack-card div ul,
+.product-card div ul li,
+.to-do-card ul li,
+body {
+	background-color: var(--dark-background);
+}
 .discord-card h3,
 body {
 	display: flex;
 	align-items: center;
 }
-.product-card div ul li,
-body {
-	background-color: var(--dark-background);
-}
-
-.product-card h1 {
-	letter-spacing: 1px;
-}
-
 .product-card h1,
 body {
 	color: var(--white-main);
 }
-body {
-	flex-direction: column;
+.article-card div div p,
+.discord-card div a,
+.discord-card h3 i,
+.discord-card p.sub,
+a {
+	color: var(--grey-main);
 }
 body {
+	flex-direction: column;
 	gap: 54px;
-	font-family: 'Roboto';
+	font-family: Roboto;
 	padding: 3% 20%;
 }
 h1 {
@@ -30,11 +53,9 @@ h1 {
 }
 p {
 	font-size: 18px;
-	letter-spacing: 1px;
 	object-fit: fill;
 }
 a {
-	color: var(--grey-main);
 	text-decoration: none;
 }
 .art-card:hover div > h1,
@@ -52,7 +73,7 @@ a {
 .to-do-card ul li:hover > .content,
 a:hover {
 	color: var(--red-main);
-	transition: 300ms ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 .profile-card span,
 a.selected {
@@ -74,7 +95,6 @@ a.selected {
 	border: 2px solid var(--grey-main);
 	padding: 9px 18px;
 	font-size: 14px;
-	background-color: var(--dark-card);
 	font-weight: 600;
 }
 .nav li a:hover,
@@ -88,35 +108,18 @@ a.selected {
 	list-style-type: none;
 }
 .grid-list-default {
-	grid-template-areas:
-		'profile-card profile-card   map-card   product-card'
-		'discord-card insta-card     to-do-card product-card'
-		'article-card article-card   to-do-card github-card'
-		'my-stack-card my-stack-card artstation-card art-card';
+	grid-template-areas: 'profile-card profile-card   map-card   product-card' 'discord-card insta-card     to-do-card product-card' 'article-card article-card   to-do-card github-card' 'my-stack-card my-stack-card artstation-card art-card';
 }
 .grid-list-about {
-	grid-template-areas:
-		'profile-card profile-card    map-card   insta-card'
-		'my-stack-card my-stack-card  to-do-card product-card'
-		'artstation-card github-card    to-do-card product-card'
-		'discord-card article-card article-card art-card';
+	grid-template-areas: 'profile-card profile-card    map-card   insta-card' 'my-stack-card my-stack-card  to-do-card product-card' 'artstation-card github-card    to-do-card product-card' 'discord-card article-card article-card art-card';
 }
 .grid-list-projects {
-	grid-template-areas:
-		'profile-card profile-card   product-card to-do-card'
-		'artstation-card github-card product-card to-do-card'
-		'art-card my-stack-card     my-stack-card insta-card'
-		'article-card article-card discord-card map-card';
+	grid-template-areas: 'profile-card profile-card   product-card to-do-card' 'artstation-card github-card product-card to-do-card' 'art-card my-stack-card     my-stack-card insta-card' 'article-card article-card discord-card map-card';
 }
 .grid-list-media {
-	grid-template-areas:
-		'profile-card profile-card   insta-card   artstation-card'
-		'github-card art-card     discord-card    product-card'
-		'my-stack-card my-stack-card   to-do-card product-card'
-		'article-card article-card to-do-card map-card';
+	grid-template-areas: 'profile-card profile-card   insta-card   artstation-card' 'github-card art-card     discord-card    product-card' 'my-stack-card my-stack-card   to-do-card product-card' 'article-card article-card to-do-card map-card';
 }
 .grid-item {
-	background-color: var(--dark-card);
 	border-radius: 24px;
 	border: 2px solid var(--grey-main);
 	min-height: 260px;
@@ -124,20 +127,16 @@ a.selected {
 }
 .grid-item:hover,
 .nav:hover {
-	border-color: var(--red-main);
-	transition: 350ms ease-in-out;
 	box-shadow: 0 0 12px var(--red-main);
 }
 .profile-card {
 	grid-area: profile-card;
 	padding: 26px 36px;
 }
-
 .profile-card p {
 	text-align: justify;
 	line-height: 1.5rem;
 }
-
 .profile-card span {
 	font-weight: 600;
 	text-decoration: underline;
@@ -167,11 +166,6 @@ a.selected {
 	grid-area: map-card;
 	overflow: hidden;
 }
-.map-card div,
-.map-card div iframe {
-	width: 100%;
-	height: 100%;
-}
 .map-card div iframe {
 	position: relative;
 	filter: grayscale(100%) invert(100%);
@@ -193,7 +187,6 @@ a.selected {
 	text-align: center;
 	font-weight: 600;
 	margin-top: 48px;
-	letter-spacing: 1px;
 }
 .product-card div ul {
 	list-style-type: none;
@@ -214,11 +207,11 @@ a.selected {
 	letter-spacing: 1px;
 	font-size: 24px;
 	padding: 25px 0;
-	font-family: 'Kanit';
+	font-family: Kanit;
 }
 .product-card div ul li:hover {
 	background-color: var(--darkest);
-	transition: 300ms ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 .discord-card {
 	grid-area: discord-card;
@@ -227,7 +220,7 @@ a.selected {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	padding: 18px 18px 0px 18px;
+	padding: 18px 18px 0;
 }
 .article-card div div,
 .discord-card div div {
@@ -243,22 +236,18 @@ a.selected {
 	width: fit-content;
 }
 .discord-card div a:hover {
-	border-color: var(--red-main);
-	transition: 300ms ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 .discord-card h3 {
 	font-size: 20px;
 	gap: 6px;
 }
-.discord-card h3 i {
-	font-size: 12px;
-}
-
-.article-card div div p,
-.discord-card div a,
+.art-card div a i,
+.artstation-card div a i,
 .discord-card h3 i,
-.discord-card p.sub {
-	color: var(--grey-main);
+.github-card div a i,
+.insta-card div a i {
+	font-size: 12px;
 }
 .insta-card {
 	grid-area: insta-card;
@@ -309,18 +298,12 @@ a.selected {
 	width: fit-content;
 	height: fit-content;
 }
-.art-card div a i,
-.artstation-card div a i,
-.github-card div a i,
-.insta-card div a i {
-	font-size: 12px;
-}
 .art-card div a i:hover,
 .article-card div a:hover,
 .artstation-card div a i:hover,
 .github-card div a i:hover,
 .insta-card div a i:hover {
-	transition: 300ms ease-in-out;
+	transition: 0.3s ease-in-out;
 	color: var(--red-main);
 }
 .article-card {
@@ -331,13 +314,10 @@ a.selected {
 .my-stack-card h1 {
 	letter-spacing: 1px;
 }
-
 .article-card h1 span {
 	font-style: italic;
 }
 .article-card div {
-	height: 100%;
-	width: 100%;
 	padding: 32px;
 	gap: 16px;
 }
@@ -353,9 +333,6 @@ a.selected {
 	gap: 12px;
 	align-items: center;
 }
-.article-card div a:hover {
-	border-color: var(--red-main);
-}
 .to-do-card {
 	grid-area: to-do-card;
 	padding: 26px 0;
@@ -370,15 +347,11 @@ a.selected {
 	gap: 6px;
 	list-style-type: none;
 	align-items: flex-end;
-	width: 100%;
-	height: 100%;
 	overflow-y: scroll;
 	padding: 0;
 }
 .to-do-card ul li {
-	background-color: var(--dark-background);
 	width: 90%;
-	border-radius: 0.5rem;
 	padding: 16px;
 	gap: 9px;
 }
@@ -387,7 +360,7 @@ a.selected {
 	font-style: italic;
 }
 .to-do-card ul li:hover > .content {
-	transition: 300ms;
+	transition: 0.3s;
 }
 .to-do-card ul li .content {
 	font-size: 16px;
@@ -403,7 +376,9 @@ a.selected {
 	width: 7px;
 	color: transparent;
 }
-::-webkit-scrollbar-corner {background-color: transparent;}
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
 .my-stack-card:hover ::-webkit-scrollbar-thumb,
 .to-do-card:hover > ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
@@ -436,7 +411,6 @@ a.selected {
 .my-stack-card div ul {
 	margin-top: 21px;
 	list-style-type: none;
-	background-color: var(--dark-background);
 	border-radius: 0.5rem;
 	display: flex;
 	overflow-x: scroll;
@@ -478,7 +452,7 @@ a i {
 	color: var(--grey-main);
 }
 .footer-text:hover {
-	transition: 300ms ease-in-out;
+	transition: 0.3s ease-in-out;
 	color: var(--red-main);
 	cursor: default;
 }
@@ -492,40 +466,30 @@ a i {
 .large-vertical {
 	height: 620px;
 }
-
 * {
 	text-align: center;
 	border-radius: 32px !important;
 }
-
-.discord-card div p,
-.discord-card div h3 {
+.discord-card div h3,
+.discord-card div p {
 	text-align: left;
 }
-
 .profile-card img {
 	border-radius: 50% !important;
 }
-
 .profile-card .emoji {
 	position: relative;
 	top: 2px;
 	height: 18px !important;
 	width: 18px !important;
 }
-
 .to-do-card ul li {
 	border-radius: 1.3rem !important;
 }
-
-.my-stack-card ul {
-	border-radius: 0.5rem !important;
-}
-
-.to-do-card .to-do-container {
-	border-radius: 1rem !important;
-}
-
+.my-stack-card ul,
 .to-do-card .to-do-container li {
 	border-radius: 0.5rem !important;
+}
+.to-do-card .to-do-container {
+	border-radius: 1rem !important;
 }
