@@ -74,6 +74,8 @@
 	.map-card div iframe {
 		border-radius: 2rem !important;
 		overflow: hidden !important;
+		width: 100% !important;
+		height: 115% !important;
 	}
 	.product-card,
 	.to-do-card {
