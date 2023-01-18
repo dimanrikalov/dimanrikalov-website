@@ -80,6 +80,11 @@
 		width: 100% !important;
 		border-radius: 2rem !important;
 	}
+	
+	.map-card {
+		height: 100.1% !important;
+	}
+
 	#map button,
 	#map span, 
 	#map img,

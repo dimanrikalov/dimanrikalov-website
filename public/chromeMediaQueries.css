@@ -64,6 +64,20 @@
 		height: 14px !important;
 		width: 14px !important;
 	}
+	.map-card,
+	.map-card * {
+		height: 180px !important;
+		width: 100% !important;
+	}
+	.map-card {
+		height: 100.1% !important;
+	}
+	#map button,
+	#map span, 
+	#map img,
+	#map a {
+		display: none !important;
+	}
 	.product-card,
 	.to-do-card {
 		width: 100% !important;
@@ -192,17 +206,5 @@
 	}
 	.footer-text {
 		margin: 12px 0 !important;
-	}
-
-	.map-card,
-	.map-card * {
-		height: 180px !important;
-		width: 100% !important;
-	}
-	#map button,
-	#map span, 
-	#map img,
-	#map a {
-		display: none !important;
 	}
 }
