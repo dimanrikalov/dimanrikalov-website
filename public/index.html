@@ -15,6 +15,7 @@
 		<script src="./detectBrowser.js" defer></script>
 		<script src="https://unpkg.com/animate-css-grid@latest" defer></script>
 		<script src="./index.js" defer></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM3J_CHVn0zonhJEbjv4qjx1bHeNov6sA&map_ids=f88b4e50413c4365&callback=initMap" defer></script>
 	</head>
 	<body>
 		<div>
@@ -56,29 +57,13 @@
 							Hello, I'm <span>Diman</span> - a highly motivated
 							Computer Engineering student with a strong desire
 							for self-improvement. Thanks for visiting and I am
-							looking forward to connecting with you.
-							<img
-								class="emoji"
-								src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Winking%20Face.png"
-								alt="Winking Face"
-								width="18"
-								height="18"
-							/>
+							looking forward to connecting with you. 
+							<img class="emoji" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Winking%20Face.png" alt="Winking Face" width="18" height="18" />
 						</p>
 					</div>
-				</li>
+				</li>	
 				<li class="grid-item map-card basic">
-					<div class="map-container">
-						<iframe
-							class="map"
-							src="https://my.atlistmaps.com/map/64c8c672-b8b9-4eab-95e2-fb6586751a4f?share=true"
-							allow="geolocation"
-							width="100%"
-							height="100%"
-							frameborder="0"
-							scrolling="no"
-							allowfullscreen
-						></iframe>
+					<div id="map">
 					</div>
 				</li>
 				<li class="grid-item product-card basic large-vertical">

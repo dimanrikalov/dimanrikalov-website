@@ -32,3 +32,12 @@ buttons.forEach((element) => {
 		}
 	});
 });
+
+function initMap() {
+	const map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 42.1354, lng:24.7453 },
+		zoom: 13,
+		disableDefaultUI: true,
+		mapId:'f88b4e50413c4365'
+	})
+}
