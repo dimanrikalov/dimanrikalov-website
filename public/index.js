@@ -1,7 +1,7 @@
 const year = new Date().getFullYear();
 document.querySelector('.footer-text').innerText = `Diman Rikalov ® ${year}`;
 
-let grid = document.querySelector('#grid');
+const grid = document.querySelector('#grid');
 
 animateCSSGrid.wrapGrid(grid, {duration:400, stagger:10});
 
