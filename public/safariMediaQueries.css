@@ -51,7 +51,7 @@
 	}
 	.product-card div,
 	.to-do-card {
-		padding: 12px 0 !important;
+		padding: 9px 6px !important;
 		display: flex !important;
 	}
 	.profile-card div {
@@ -90,11 +90,12 @@
 		align-items: center !important;
 	}
 	.product-card div ul {
-		width: 85% !important;
+		width: 100% !important;
 		gap: 6px !important;
 	}
 	.product-card div ul li {
 		padding: 12px !important;
+		border-radius: 0.8rem !important;
 		width: 100% !important;
 	}
 	.to-do-card {

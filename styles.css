@@ -358,7 +358,7 @@ a.selected {
 }
 .to-do-card {
 	grid-area: to-do-card;
-	padding: 19px 0;
+	padding: 26px 0;
 }
 .article-card div,
 .to-do-card ul,
