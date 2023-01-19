@@ -1,4 +1,4 @@
-@import url(base.css);
+@import url('base.css');
 .footer-text,
 .home {
 	font-family: Roboto;
@@ -7,10 +7,11 @@
 a {
 	font-weight: 600;
 	color: var(--grey-main);
+	font-size: 24px;
+	text-decoration: none;
 }
 .footer-text:hover,
-.home:hover,
-li:hover {
+.home:hover {
 	color: var(--red-main);
 }
 body {
@@ -46,21 +47,17 @@ div .art-container {
 	list-style-type: none;
 }
 img {
-	width: 294px;
 	border-radius: 1rem;
-	box-shadow: 10px 10px 15px var(--darkest);
+    border: 2px solid var(--grey-main);
+	border-radius: 32px;
+	overflow: hidden;
+	box-shadow: 6px 6px 12px var(--darkest);
 }
-li:hover > img {
-	cursor: pointer;
-}
-a {
-	font-family: Kanit;
-	font-size: 24px;
-	text-decoration: none;
-}
-li:hover {
-	transition: 250ms ease-in-out;
-	transform: scale(1.05);
+img:hover {
+    cursor: pointer;
+	transition: 0.3s ease-in-out;
+	border-color: var(--red-main);
+	box-shadow: 0px 0px 12px rgba(252, 52, 82, 100%);
 }
 .footer-text {
 	font-size: 18px;

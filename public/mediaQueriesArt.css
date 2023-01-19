@@ -1,17 +1,15 @@
 @media screen and (max-width: 450px) {
+	.art-container li {
+		border-radius: 1.5rem !important;
+	}
 	.footer-text,
 	a.home {
 		font-size: 13px !important;
-	}
-	* {
-		width: unset !important;
-		height: unset !important;
-	}
-	a.home {
 		margin-bottom: 16px !important;
 	}
 	img {
-		width: 28vw !important;
+		border-radius: 1.5rem !important;
+		width: 26vw !important;
 	}
 	p {
 		margin: 16px 0 !important;
