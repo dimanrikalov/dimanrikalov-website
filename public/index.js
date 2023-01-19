@@ -34,8 +34,9 @@ buttons.forEach((element) => {
 });
 
 function initMap() {
+	const coordinates = {lat: 42.132745, lng:24.744898 };
 	const map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 42.1354, lng:24.7453 },
+		center: coordinates,
 		zoom: 13,
 		disableDefaultUI: true,
 		mapId:'f88b4e50413c4365'

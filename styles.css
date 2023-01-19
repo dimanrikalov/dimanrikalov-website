@@ -138,12 +138,11 @@ a.selected {
 }
 .profile-card span {
 	font-weight: 600;
-	text-decoration: underline;
 }
 .profile-card > div {
 	display: flex;
 	flex-direction: column;
-	gap: 18px;
+	gap: 24px;
 }
 .profile-card div div {
 	display: flex;
@@ -158,7 +157,7 @@ a.selected {
 }
 .profile-card div img {
 	border-radius: 50%;
-	width: 136px;
+	width: 113px;
 }
 .map-card,
 .product-card {
@@ -329,7 +328,6 @@ a.selected {
 .article-card div a {
 	border: 1px solid var(--grey-main);
 	padding: 7px 12px;
-	border-radius: 2rem;
 	display: flex;
 	gap: 12px;
 	align-items: center;
@@ -484,7 +482,8 @@ a i {
 	height: 18px !important;
 	width: 18px !important;
 }
-.to-do-card ul li {
+.to-do-card ul li,
+.product-card ul li {
 	border-radius: 1.3rem !important;
 }
 .my-stack-card ul,
