@@ -106,6 +106,9 @@
 		border-radius: 0.8rem !important;
 		width: 100% !important;
 	}
+	.product-card div ul li a {
+		width: 100% !important;
+	}
 	.to-do-card {
 		overflow: hidden !important;
 		flex-direction: column !important;
