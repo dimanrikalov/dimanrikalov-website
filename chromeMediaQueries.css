@@ -141,7 +141,7 @@
 	.my-stack-card ul {
 		width: 90% !important;
 		height: 42px !important;
-		padding: 7px !important;
+		padding: 6px !important;
 		overflow-y: hidden;
 	}
 	.my-stack-card ul::-webkit-scrollbar {

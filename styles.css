@@ -19,7 +19,7 @@ p {
 	height: 100%;
 	width: 100%;
 }
-.my-stack-card div ul,
+
 .product-card div ul li,
 .to-do-card ul li,
 body {
@@ -431,9 +431,9 @@ a.selected {
 }
 .my-stack-card div ul li img {
 	width: 42px;
-	background-color: var(--dark-card) !important;
-	padding: 2px !important;
-	border-radius: 0.2rem !important;
+	border: 1px solid rgb(31, 31, 31);
+
+	border-radius: 8px !important;
 }
 .github-card {
 	grid-area: github-card;
@@ -489,6 +489,10 @@ a i {
 .to-do-card ul li,
 .product-card ul li {
 	border-radius: 1.3rem !important;
+}
+
+.my-stack-card ul {
+	background-color: var(--dark-background);
 }
 .my-stack-card ul,
 .to-do-card .to-do-container li {
